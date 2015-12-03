@@ -41,11 +41,5 @@ public class SorteioNumeroModel {
     }
 
   }
-
-    void getNumero1(int numero1) {
-    }
-
-    void getNumero2(int numero2) {
-    }
 }
 
