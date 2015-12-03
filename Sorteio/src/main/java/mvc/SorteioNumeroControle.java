@@ -1,14 +1,38 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package mvc;
 
-/**
- *
- * @author carlo_000
- */
-public class SorteioNumeroControle {
+import java.io.IOException;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+@WebServlet(value = "/sorteio")
+public class SorteioNumeroControle extends HttpServlet{
+    protected void service(
+      HttpServletRequest req,
+      HttpServletResponse resp)
+      throws ServletException, IOException {
+
+    String paramPeso = req.getParameter("peso");
+    Double peso = paramPeso == null ? 0.0 : Double.parseDouble(paramPeso);
     
+    String paramAltura = req.getParameter("altura");
+    Double altura = paramAltura == null ? 0.0 : Double.parseDouble(paramAltura);
+
+    SorteioNumeroModel cSorteio = new SorteioNumeroModel();
+    cSorteio.getNumero1(numero1);
+    cSorteio.getNumero2(numero2);
+    cSorteio.getSorteio();
+    
+    req.setAttribute("sorteio", cSorteio); //Passando um objeto para o JSP.
+    
+    //Chamar o JSP apenas para mostrar o resultado.
+    req.getRequestDispatcher("mvc/imc.jsp").forward(req, resp);
+  }
+
 }
+
+
