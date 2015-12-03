@@ -16,11 +16,11 @@ public class SorteioNumeroControle extends HttpServlet{
       HttpServletResponse resp)
       throws ServletException, IOException {
 
-    String paramPeso = req.getParameter("numero1");
-    Double numero1 = paramNumero1 == null ? 0.0 : Double.parseDouble(paramPeso);
+    String paramNumero1 = req.getParameter("numero1");
+    int numero1 = paramNumero1 == null ? 0.0 : Integer.parseInt(paramNumero1);
     
-    String paramAltura = req.getParameter("numero2");
-    Double numero2 = paramAltura == null ? 0.0 : Double.parseDouble(paramAltura);
+    String paramNumero2 = req.getParameter("numero2");
+    int paramNumero2 = paramNumero2 == null ? 0.0 : Integer.parseInt(paramNumero2);
 
     SorteioNumeroModel cSorteio = new SorteioNumeroModel();
     cSorteio.getNumero1(numero1);

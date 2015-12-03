@@ -7,7 +7,7 @@ public class SorteioNumeroModel {
     
   private int numero1;
   private int numero2;
-  private String sorteio;
+  private int sorteio;
 
     public int getNumero1() {
         return numero1;
@@ -25,11 +25,11 @@ public class SorteioNumeroModel {
         this.numero2 = numero2;
     }
 
-    public String getSorteio() {
+    public int getSorteio() {
         return sorteio;
     }
 
-    public void setSorteio(String sorteio) {
+    public void setSorteio(int sorteio) {
         this.sorteio = sorteio;
     }
 
