@@ -20,7 +20,7 @@ public class SorteioNumeroControle extends HttpServlet{
     int numero1 = paramNumero1 == null ? 0.0 : Integer.parseInt(paramNumero1);
     
     String paramNumero2 = req.getParameter("numero2");
-    int paramNumero2 = paramNumero2 == null ? 0.0 : Integer.parseInt(paramNumero2);
+    int numero2 = paramNumero2 == null ? 0.0 : Integer.parseInt(paramNumero2);
 
     SorteioNumeroModel cSorteio = new SorteioNumeroModel();
     cSorteio.getNumero1(numero1);
