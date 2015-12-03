@@ -16,11 +16,11 @@ public class SorteioNumeroControle extends HttpServlet{
       HttpServletResponse resp)
       throws ServletException, IOException {
 
-    String paramPeso = req.getParameter("peso");
-    Double peso = paramPeso == null ? 0.0 : Double.parseDouble(paramPeso);
+    String paramPeso = req.getParameter("numero1");
+    Double numero1 = paramNumero1 == null ? 0.0 : Double.parseDouble(paramPeso);
     
-    String paramAltura = req.getParameter("altura");
-    Double altura = paramAltura == null ? 0.0 : Double.parseDouble(paramAltura);
+    String paramAltura = req.getParameter("numero2");
+    Double numero2 = paramAltura == null ? 0.0 : Double.parseDouble(paramAltura);
 
     SorteioNumeroModel cSorteio = new SorteioNumeroModel();
     cSorteio.getNumero1(numero1);
@@ -30,7 +30,7 @@ public class SorteioNumeroControle extends HttpServlet{
     req.setAttribute("sorteio", cSorteio); //Passando um objeto para o JSP.
     
     //Chamar o JSP apenas para mostrar o resultado.
-    req.getRequestDispatcher("mvc/imc.jsp").forward(req, resp);
+    req.getRequestDispatcher("mvc/sorteio.jsp").forward(req, resp);
   }
 
 }
