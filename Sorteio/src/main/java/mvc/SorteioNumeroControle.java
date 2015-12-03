@@ -9,7 +9,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet(value = "/sorteio")
+@WebServlet(value = "/Sorteio")
 public class SorteioNumeroControle extends HttpServlet{
     protected void service(
       HttpServletRequest req,
