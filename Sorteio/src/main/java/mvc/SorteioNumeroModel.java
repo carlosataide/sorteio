@@ -41,5 +41,13 @@ public class SorteioNumeroModel {
     }
 
   }
+
+    void getNumero1(int numero1) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    void getNumero2(int numero2) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 }
 
