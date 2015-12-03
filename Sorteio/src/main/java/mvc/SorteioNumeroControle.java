@@ -23,8 +23,8 @@ public class SorteioNumeroControle extends HttpServlet{
     int numero2 = (int) (paramNumero2 == null ? 0.0 : Integer.parseInt(paramNumero2));
 
     SorteioNumeroModel cSorteio = new SorteioNumeroModel();
-    cSorteio.getNumero1(numero1);
-    cSorteio.getNumero2(numero2);
+    cSorteio.getNumero1();
+    cSorteio.getNumero2();
     cSorteio.getSorteio();
     
     req.setAttribute("sorteio", cSorteio); //Passando um objeto para o JSP.
