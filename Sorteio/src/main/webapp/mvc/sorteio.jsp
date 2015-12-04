@@ -35,12 +35,12 @@
             <form role="form">
               <fieldset>
                 <div class="form-group">
-                  <input class="form-control" placeholder="Peso" name="peso"
-                    type="text" value="${param.peso}">
+                  <input class="form-control" placeholder="Primeiro número" name="numero1"
+                    type="text" value="${param.numero1}">
                 </div>
                 <div class="form-group">
-                  <input class="form-control" placeholder="Altura" name="altura"
-                    type="text" value="${param.altura}">
+                  <input class="form-control" placeholder="Segundo número" name="numero2"
+                    type="text" value="${param.numero2}">
                 </div>
                 <input type="submit" class="btn btn-sm btn-success" value="Calcular">
               </fieldset>
@@ -48,7 +48,7 @@
             <br>
             <%
             //Obtendo a variável definida no servlet.
-            mvc.SorteioNumeroModel calculoImc = (mvc.SorteioNumeroModel) request.getAttribute("imc");
+            mvc.SorteioNumeroModel calculoImc = (mvc.SorteioNumeroModel) request.getAttribute("sorteio");
             //Se parâmetros inválidos, ...
             //if (calculoImc.getPeso() == 0 || calculoImc.getAltura() == 0) {
 %>
