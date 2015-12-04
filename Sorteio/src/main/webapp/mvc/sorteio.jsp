@@ -42,7 +42,7 @@
                   <input class="form-control" placeholder="Segundo número" name="numero2"
                     type="text" value="${param.numero2}">
                 </div>
-                <input type="submit" class="btn btn-sm btn-success" value="Calcular">
+                <input type="submit" class="btn btn-sm btn-success" value="Sortear">
               </fieldset>
             </form>
             <br>
@@ -53,7 +53,7 @@
             if (gerarNumero.getNumero1() == 0 || gerarNumero.getNumero2() == 0) {
 %>
 <!-- Aqui posso colocar HTML. -->
-<div class="alert alert-danger" role="alert">Coloque algum valor nos campos Peso e Altura.</div>
+<div class="alert alert-danger" role="alert">Coloque algum valor nos campos.</div>
 <%
            // } else {
               %>
