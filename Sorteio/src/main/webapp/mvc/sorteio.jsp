@@ -48,9 +48,9 @@
             <br>
             <%
             //Obtendo a variável definida no servlet.
-            mvc.SorteioNumeroModel calculoImc = (mvc.SorteioNumeroModel) request.getAttribute("sorteio");
+            mvc.SorteioNumeroModel gerarNumero = (mvc.SorteioNumeroModel) request.getAttribute("sorteio");
             //Se parâmetros inválidos, ...
-            //if (calculoImc.getPeso() == 0 || calculoImc.getAltura() == 0) {
+            if (gerarNumero.getNumero1() == 0 || gerarNumero.getNumero2() == 0) {
 %>
 <!-- Aqui posso colocar HTML. -->
 <div class="alert alert-danger" role="alert">Coloque algum valor nos campos Peso e Altura.</div>
