@@ -48,18 +48,18 @@
             <br>
             <%
             //Obtendo a variável definida no servlet.
-            mvc.CalculoIMCModel calculoImc = (mvc.CalculoIMCModel) request.getAttribute("imc");
+            mvc.SorteioNumeroModel calculoImc = (mvc.SorteioNumeroModel) request.getAttribute("imc");
             //Se parâmetros inválidos, ...
-            if (calculoImc.getPeso() == 0 || calculoImc.getAltura() == 0) {
+            //if (calculoImc.getPeso() == 0 || calculoImc.getAltura() == 0) {
 %>
 <!-- Aqui posso colocar HTML. -->
 <div class="alert alert-danger" role="alert">Coloque algum valor nos campos Peso e Altura.</div>
 <%
-            } else {
+           // } else {
               %>
 <!-- Aqui posso colocar HTML. -->
 <div class="alert alert-success" role="alert">
-IMC: <%=calculoImc.getImc()%>
+
 <br>
 Resultado: ${calculoImc.resultado}
 </div>
